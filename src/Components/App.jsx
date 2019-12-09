@@ -4,6 +4,7 @@ import LoginContainer from "./MyComponents/LoginContainer";
 import SignUpContainer from "./MyComponents/SignUpContainer";
 import decode from 'jwt-decode';
 import HomeContainer from './MyComponents/HomeContainer';
+import TravelContainer from './MyComponents/TravelContainer';
 
 class App extends Component {
     
@@ -69,6 +70,9 @@ class App extends Component {
     return (
       <Switch>
         <Route exact path="/" render={() => 
+          <TravelContainer url={url} Authenticate = {this.Authenticate} isAuthenticated = {this.isAuthenticated} handleMenu = {this.handleMenu} getMenuState = {this.getMenuState}/>
+        }/>
+        <Route exact path="/Login" render={() => 
           <LoginContainer url={url} Authenticate = {this.Authenticate} isAuthenticated = {this.isAuthenticated} handleMenu = {this.handleMenu} getMenuState = {this.getMenuState}/>
         }/>
         <Route exact path = '/Home' render={()=>

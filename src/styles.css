@@ -85,28 +85,28 @@ nav ul li a{
 
 .slide1{
 	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)),
-					  url("./images/chat1.jpeg");
+					  url("./images/Travel1.gif");
 	background-size: cover;
 	background-position: center;
 }
 
 .slide2{
 	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)),
-					  url("./images/chat2.jpeg");
+					  url("./images/Travel2.gif");
 	background-size: cover;
 	background-position: center;
 }
 
 .slide3{
 	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)), 
-					  url("./images/chat3.jpeg");
+					  url("./images/Travel3.gif");
 	background-size: cover;
 	background-position: center;
 }
 
 .slide4{
 	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)),
-					  url("./images/chat4.jpeg");
+					  url("./images/Travel4.gif");
 	background-size: cover;
 	background-position: center;
 }
