@@ -16,17 +16,24 @@ function NavBar(props) {
   return( 
     <header>
     <nav>
-      <div className = 'menu-icon' onClick ={props.handleMenu}>
-        <i className="fas fa-bars fa-2x"></i>
-      </div>
-      <h1 className = "logo">
-        majestic vibes
-      </h1>	
-      <div className = "menu">
-        <ul className = {showing}>
-          {navChildren}
+        <ul class = "nav-links">
+            <li><a class= "nav-link" href ="">Explore</a></li>
+            <li><a class= "nav-link" href="">About</a></li>
+            <li><a class= "nav-link" href="">Contact</a></li>
         </ul>
-      </div>		 	
+			
+        <footer>
+            <div class = "company-info">
+                JEMS
+                <br/>
+                2019
+            </div>
+            <ul class = "social-links">
+                <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+            </ul>
+        </footer>	 	
     </nav>
   </header>);
 }
