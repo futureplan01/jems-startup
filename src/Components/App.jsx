@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import { Switch, Route } from "react-router-dom";
-import LoginContainer from "./MyComponents/LoginContainer";
-import SignUpContainer from "./MyComponents/SignUpContainer";
+import LoginContainer from "./Authentication/LoginContainer";
+import SignUpContainer from "./Authentication/SignUpContainer";
 import decode from 'jwt-decode';
-import HomeContainer from './MyComponents/HomeContainer';
-import TravelContainer from './MyComponents/TravelContainer';
+import HomeContainer from './Authentication/HomeContainer';
+import TravelContainer from './Authentication/TravelContainer';
 
 
 class App extends Component {
