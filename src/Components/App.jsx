@@ -5,6 +5,7 @@ import SignUpContainer from "./Authentication/SignUpContainer";
 import decode from 'jwt-decode';
 import HomeContainer from './Authentication/HomeContainer';
 import TravelContainer from './Authentication/TravelContainer';
+import axios from 'axios';
 
 
 class App extends Component {
@@ -63,6 +64,13 @@ class App extends Component {
 
   componentDidMount(){
     this.tokenValid();
+    axios.get('http://localhost:7555/Edward')
+    .then((res)=>{
+      console.log("Nothing");
+    })
+    .catch((err) => {
+      console.log("Error:" + err);
+    })
   }
   render() {
 
