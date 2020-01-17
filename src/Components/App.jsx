@@ -5,6 +5,7 @@ import SignUpContainer from "./Authentication/SignUpContainer";
 import decode from 'jwt-decode';
 import HomeContainer from './Authentication/HomeContainer';
 import TravelContainer from './Authentication/TravelContainer';
+import EventContainer from './Events/EventContainer';
 import axios from 'axios';
 
 
@@ -63,18 +64,11 @@ class App extends Component {
   }    
 
   componentDidMount(){
-    this.tokenValid();
-    axios.get('http://localhost:7555/Edward')
-    .then((res)=>{
-      console.log("Nothing");
-    })
-    .catch((err) => {
-      console.log("Error:" + err);
-    })
+
   }
   render() {
 
-    let url = 'http://localhost:7555/'
+    let url = 'https://jems-events.herokuapp.com/'
 
     return (
       <Switch>
@@ -85,6 +79,9 @@ class App extends Component {
           <LoginContainer url={url} Authenticate = {this.Authenticate} isAuthenticated = {this.isAuthenticated} handleMenu = {this.handleMenu} getMenuState = {this.getMenuState}/>
         }/>
         <Route exact path = '/Home' render={()=>
+          <HomeContainer url ={url} logOut={this.logOut} isAuthenticated = {this.isAuthenticated} handleMenu = {this.handleMenu} getMenuState = {this.getMenuState}/>
+        }/>
+        <Route exact path = '/all-events' render={()=>
           <HomeContainer url ={url} logOut={this.logOut} isAuthenticated = {this.isAuthenticated} handleMenu = {this.handleMenu} getMenuState = {this.getMenuState}/>
         }/>
         <Route exact path="/SignUp" render={() => 
