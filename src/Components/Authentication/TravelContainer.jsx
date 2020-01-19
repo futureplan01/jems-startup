@@ -11,7 +11,6 @@ function TravelContainer(props) {
       <NavBar handleMenu = {props.handleMenu} isAuthenticated ={props.isAuthenticated} getMenuState = {props.getMenuState}/>
       <Slider/>
       <Welcome/>
-      <Explore/>
 	</div>);
 }
 
