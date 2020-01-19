@@ -35,9 +35,7 @@ class Explore extends Component{
             images[currentImageCounter].classList.remove("stackImage"); 
         }
     }
-    componentDidMount(){
-    
-    }
+
     render(){
         return (
             <div id = "container">

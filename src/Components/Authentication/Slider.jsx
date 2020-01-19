@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import Explore from "./Explore";
 
 class Slider extends Component{
 
@@ -46,7 +47,8 @@ class Slider extends Component{
         <div className = "slide-images slide3"></div>
         <div className = "slide-images slide4"></div>
         <div className = "slide-images slide5"></div>
-        </div>);
+        </div>
+        );
     }
 }
 

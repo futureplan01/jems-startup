@@ -2,16 +2,15 @@ import React from "react";
 
 import NavBar from "./NavBar";
 import Slider from "./Slider";
-import Login from "./Login";
-import SearchBar from "./SearchBar";
 import Explore from "./Explore";
+import Welcome from "./Welcome";
 
 function TravelContainer(props) {
     return( 
     <div  className = "container">
       <NavBar handleMenu = {props.handleMenu} isAuthenticated ={props.isAuthenticated} getMenuState = {props.getMenuState}/>
-      <SearchBar/>
       <Slider/>
+      <Welcome/>
       <Explore/>
 	</div>);
 }
