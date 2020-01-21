@@ -1,10 +1,10 @@
 import React from "react";
-
+import Spain from "./Spain";
 
 
 function SpainContainer(props) {
     return(<div>
-        <h1> Spain </h1>
+        <Spain/>
     </div>)
 }
 
