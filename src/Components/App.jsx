@@ -92,7 +92,7 @@ class App extends Component {
         <Route exact path="/SignUp" render={() => 
           <SignUpContainer url={url} isAuthenticated = {this.isAuthenticated}  handleMenu = {this.handleMenu}  getMenuState = {this.getMenuState}/>
         }/>
-        <CountryRoutes/>
+        <CountryRoutes url={url} Authenticate = {this.Authenticate} isAuthenticated = {this.isAuthenticated} handleMenu = {this.handleMenu} getMenuState = {this.getMenuState}/>
       </Switch>);
   }
 }
