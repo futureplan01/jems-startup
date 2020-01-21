@@ -8,6 +8,7 @@ import TravelContainer from './Authentication/TravelContainer';
 import EventContainer from './Events/EventContainer';
 import axios from 'axios';
 import CountryContainer from './Events/CountryContainer';
+import CountryRoutes from './Routes/CountryRoutes';
 
 
 class App extends Component {
@@ -91,6 +92,7 @@ class App extends Component {
         <Route exact path="/SignUp" render={() => 
           <SignUpContainer url={url} isAuthenticated = {this.isAuthenticated}  handleMenu = {this.handleMenu}  getMenuState = {this.getMenuState}/>
         }/>
+        <CountryRoutes/>
       </Switch>);
   }
 }
