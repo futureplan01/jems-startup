@@ -7,6 +7,7 @@ import HomeContainer from './Authentication/HomeContainer';
 import TravelContainer from './Authentication/TravelContainer';
 import EventContainer from './Events/EventContainer';
 import axios from 'axios';
+import CountryContainer from './Events/CountryContainer';
 
 
 class App extends Component {
@@ -80,6 +81,9 @@ class App extends Component {
         }/>
         <Route exact path = '/Home' render={()=>
           <HomeContainer url ={url} logOut={this.logOut} isAuthenticated = {this.isAuthenticated} handleMenu = {this.handleMenu} getMenuState = {this.getMenuState}/>
+        }/>
+        <Route exact path = '/Countries' render={()=>
+          <CountryContainer url ={url} logOut={this.logOut} isAuthenticated = {this.isAuthenticated} handleMenu = {this.handleMenu} getMenuState = {this.getMenuState}/>
         }/>
         <Route exact path = '/all-events' render={()=>
           <HomeContainer url ={url} logOut={this.logOut} isAuthenticated = {this.isAuthenticated} handleMenu = {this.handleMenu} getMenuState = {this.getMenuState}/>

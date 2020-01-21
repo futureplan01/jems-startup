@@ -30,6 +30,12 @@ header nav{
 	z-index: 100;
 }
 
+.countries{
+	color: black;
+	position: relative;
+	margin: 0 auto;
+}
+
 .logo{
 	width: 20%;
 	margin-left: 3%;
@@ -399,7 +405,10 @@ a{
 
 
 
-
+.jj-black{
+	position: absolute;
+	color: black;
+}
 
 
 

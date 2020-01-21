@@ -40,26 +40,26 @@ class Explore extends Component{
         return (
             <div id = "container">
 			<div id = "explore-section">
-				<div class = "content-header">
+				<div className = "content-header">
 					<h1>Explore</h1>
 					<p>Be spontaneous, start your adventure</p>
 				</div>
 				<div id = "country-slider">
-					<a href = "https://www.yahoo.com"><div class = "country-slides country-slide-1"><h3 class = "spotlight-title">France</h3></div></a>
-					<a href = "https://www.yahoo.com"><div class = "country-slides country-slide-2"><h3 class = "spotlight-title">Spain</h3></div></a>
-					<a href = "https://www.yahoo.com"><div class = "country-slides country-slide-3"><h3 class = "spotlight-title">Iceland</h3></div></a>
-					<a href = "https://www.yahoo.com"><div class = "country-slides country-slide-4"><h3 class = "spotlight-title">Portugal</h3></div></a>
+					<a href = "https://www.yahoo.com"><div className = "country-slides country-slide-1"><h3 className = "spotlight-title">France</h3></div></a>
+					<a href = "https://www.yahoo.com"><div className = "country-slides country-slide-2"><h3 className = "spotlight-title">Spain</h3></div></a>
+					<a href = "https://www.yahoo.com"><div className = "country-slides country-slide-3"><h3 className = "spotlight-title">Iceland</h3></div></a>
+					<a href = "https://www.yahoo.com"><div className = "country-slides country-slide-4"><h3 className = "spotlight-title">Portugal</h3></div></a>
 				</div>
-				<a href = "https://www.yahoo.com"><div class = "hide country-display spotlight-country"><h3 class = "spotlight-country-title"></h3></div></a>	
-				<div class = "country-control">
-					<div class = "country-images country1"><h3 class = "country-one-title">France</h3></div>
-					<div class = "country-images country2"><h3 class = "country-two-title">Spain</h3></div>
-					<div class = "country-images country3"><h3 class = "country-three-title">Iceland</h3></div>
-					<div class = "country-images country4"><h3 class = "country-four-title">Portugal</h3></div>
+				<a href = "https://www.yahoo.com"><div className = "hide country-display spotlight-country"><h3 className = "spotlight-country-title"></h3></div></a>	
+				<div className = "country-control">
+					<div className = "country-images country1"><h3 className = "country-one-title">France</h3></div>
+					<div className = "country-images country2"><h3 className = "country-two-title">Spain</h3></div>
+					<div className = "country-images country3"><h3 className = "country-three-title">Iceland</h3></div>
+					<div className = "country-images country4"><h3 className = "country-four-title">Portugal</h3></div>
 				</div>
-				<button class = "explore-all-btn">
+				<button className = "explore-all-btn">
 					<a href = "#">
-						<i class="fas fa-globe"></i>
+						<i className="fas fa-globe"></i>
 						Explore All
 					</a>
 				</button>

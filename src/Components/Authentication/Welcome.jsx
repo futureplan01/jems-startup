@@ -7,10 +7,12 @@ import SearchBar from "./SearchBar";
 function Welcome(props) {
   return( 
     <div id = "welcome-section">
-    <div class = "welcome-message">
+    <div className = "welcome-message">
         Make the world your playground
     </div>
-    <SearchBar/>
+    <div className = "search-bar"> 
+        <Link to ="/Countries">Lets Get Started </Link>
+    </div>
 </div> );
 }
 
