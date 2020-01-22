@@ -4,7 +4,7 @@ import Spain from "./Spain";
 
 function SpainContainer(props) {
     return(<div>
-        <Spain/>
+        <Spain name={props.name} url={props.url}/>
     </div>)
 }
 

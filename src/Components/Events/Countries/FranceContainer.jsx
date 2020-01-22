@@ -1,10 +1,10 @@
 import React from "react";
-
+import France from './France'
 
 
 function FranceContainer(props) {
     return(<div>
-        <h1> France </h1>
+        <France name={props.name} url={props.url}/>
     </div>)
 }
 

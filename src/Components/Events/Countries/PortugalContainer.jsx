@@ -1,10 +1,10 @@
 import React from "react";
-
+import Portugal from "./Portugal"
 
 
 function PortugalContainer(props) {
     return(<div>
-        <h1> Portugal</h1>
+        <Portugal name={props.name} url={props.url}/>
     </div>)
 }
 

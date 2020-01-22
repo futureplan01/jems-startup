@@ -1,8 +1,9 @@
 import React, {Component} from "react";
+import FormData from "form-data"
 import axios from "axios";
 
 
-class Event extends Component{
+class Spain extends Component{
     constructor(){
         super();
         this.state = {
@@ -11,27 +12,46 @@ class Event extends Component{
         this.getEvents = this.getEvents.bind(this);
     }
 
-    getEvents(Event){
+    /*
+        All Events
+        Romance
+        Relax
+        Adventure
+    */
 
+    getEvents(event){
+        let category = ""
+        let fd = new FormData();
+        console.log(event.target.name);
+        console.log(this.props.name);
+        fd.append('Country', this.props.name)
+        fd.append('Category', event.target.name)
+        axios
+        .get(this.props.url + 'country-events',fd)
+        .then((res)=>{
+            console.log(res)
+            this.setState({data: res.data})
+        })
     }
 
     render(){
         return(<div>
             <div>
-                <button onClick={this.getEvents}> All</button>
+                <button onClick={this.getEvents} name="All"> All</button>
             </div>
             <div>
-                <button onClick={this.getEvents}>Romance</button>
+                <button onClick={this.getEvents} name="Romance">Romance</button>
             </div>
             <div>
-                <button onClick={this.getEvents}>Relaxation</button>
+                <button onClick={this.getEvents} name="Relax">Relaxation</button>
             </div>
             <div>
-                <button onClick={this.getEvents}>Adventure</button>
+                <button onClick={this.getEvents} name="Adventure">Adventure</button>
             </div>
+            {this.state.data}
         </div>)
 
     }
 
 }
-export default Event;
+export default Spain;

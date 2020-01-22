@@ -1,10 +1,10 @@
 import React from "react";
-
+import IceLand from "./IceLand";
 
 
 function IceLandContainer(props) {
     return(<div>
-        <h1> IceLand</h1>
+        <IceLand name={props.name} url={props.url}/>
     </div>)
 }
 

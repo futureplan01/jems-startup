@@ -6,7 +6,8 @@ import IceLandContainer from "../Events/Countries/IceLandContainer"
 import PortugalContainer from "../Events/Countries/PortugalContainer"
 
 function CountryRoutes(props) {
-    return(<div>
+  
+    return(<div> 
         <Route exact path="/Spain" render={() => 
           <SpainContainer url={props.url} name="Spain"  Authenticate = {props.Authenticate} isAuthenticated = {props.isAuthenticated} handleMenu = {props.handleMenu} getMenuState = {props.getMenuState}/>
         }/>
@@ -18,7 +19,7 @@ function CountryRoutes(props) {
         }/>
         <Route exact path="/Portugal" render={() => 
           <PortugalContainer url={props.url} name="Portugal" Authenticate = {props.Authenticate} isAuthenticated = {props.isAuthenticated} handleMenu = {props.handleMenu} getMenuState = {props.getMenuState}/>
-        }/>
+        }/> 
     </div>)
 }
 
