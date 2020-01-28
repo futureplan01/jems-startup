@@ -20,8 +20,6 @@ class Spain extends Component{
     */
 
     getEvents(event){
-        event.preventDefault();
-        let category = ""
         let fd = new FormData();
         fd.append('Country', this.props.name)
         fd.append('Category', event.target.name)
@@ -58,7 +56,12 @@ class Spain extends Component{
                 <button onClick={this.getEvents} name="Adventure">Adventure</button>
             </div>
             {this.state.data.map((event, i)=>{
-               return <div key={i}>{event.Category} {event.BookingUrl} {event.Event}</div>
+               return <div key={i}>
+                   <div>
+                       <h1>{event.Event}</h1>
+                       <a style={{color: 'blue'}} href={event.BookingUrl}>website</a>
+                   </div>
+               </div>
             })}
         </div>)
 
