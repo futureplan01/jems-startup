@@ -70,7 +70,7 @@ class App extends Component {
   }
   render() {
 
-    let url = 'https://jems-events.herokuapp.com/'
+    let url = 'http://127.0.0.1:5000/'
 
     return (
       <Switch>

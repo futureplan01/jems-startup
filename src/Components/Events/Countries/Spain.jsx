@@ -20,17 +20,26 @@ class Spain extends Component{
     */
 
     getEvents(event){
+        event.preventDefault();
         let category = ""
         let fd = new FormData();
-        console.log(event.target.name);
-        console.log(this.props.name);
         fd.append('Country', this.props.name)
         fd.append('Category', event.target.name)
+
+        console.log(fd.get('Country'))
+        console.log(fd.get('Category'))
         axios
-        .get(this.props.url + 'country-events',fd)
+        .post(this.props.url + 'country-events',fd,{
+            headers:{
+                'Content-Type': 'multipart/form-data'
+            }
+        })
         .then((res)=>{
             console.log(res)
             this.setState({data: res.data})
+        })
+        .catch((err)=>{
+            console.log(err);
         })
     }
 
