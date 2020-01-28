@@ -35,7 +35,7 @@ class Spain extends Component{
             }
         })
         .then((res)=>{
-            console.log(res)
+            console.log(res.data)
             this.setState({data: res.data})
         })
         .catch((err)=>{
@@ -57,7 +57,9 @@ class Spain extends Component{
             <div>
                 <button onClick={this.getEvents} name="Adventure">Adventure</button>
             </div>
-            {this.state.data}
+            {this.state.data.map((event, i)=>{
+               return <div key={i}>{event.Category} {event.BookingUrl} {event.Event}</div>
+            })}
         </div>)
 
     }
