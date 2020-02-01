@@ -10,17 +10,16 @@ function NavBar(props) {
 				<div className = "logo">Escapists</div>	
 				<ul className = "nav-links">
 					<li>
-						<a href = "#">
+						<Link to = "/countries">
 							<i className="fas fa-globe"></i>
-						</a>	
+						</Link>	
 					</li>
 					<li>
-						<a href = "#">
+						<Link to = "/Login">
 							<i className="fas fa-user-circle"></i>
-						</a>	
+						</Link>	
 					</li>
 				</ul>
-
 			</nav>
 		</header>);
 }

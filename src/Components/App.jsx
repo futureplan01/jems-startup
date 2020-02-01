@@ -5,8 +5,6 @@ import SignUpContainer from "./Authentication/SignUpContainer";
 import decode from 'jwt-decode';
 import HomeContainer from './Authentication/HomeContainer';
 import TravelContainer from './Authentication/TravelContainer';
-import EventContainer from './Events/EventContainer';
-import axios from 'axios';
 import CountryContainer from './Events/CountryContainer';
 import CountryRoutes from './Routes/CountryRoutes';
 
@@ -86,9 +84,7 @@ class App extends Component {
         <Route exact path = '/Countries' render={()=>
           <CountryContainer url ={url} logOut={this.logOut} isAuthenticated = {this.isAuthenticated} handleMenu = {this.handleMenu} getMenuState = {this.getMenuState}/>
         }/>
-        <Route exact path = '/all-events' render={()=>
-          <EventContainer url ={url} logOut={this.logOut} isAuthenticated = {this.isAuthenticated} handleMenu = {this.handleMenu} getMenuState = {this.getMenuState}/>
-        }/>
+
         <Route exact path="/SignUp" render={() => 
           <SignUpContainer url={url} isAuthenticated = {this.isAuthenticated}  handleMenu = {this.handleMenu}  getMenuState = {this.getMenuState}/>
         }/>
