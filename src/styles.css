@@ -32,6 +32,9 @@ header nav{
 
 .countries{
 	color: black;
+	position: absolute;
+	top: 25%;
+	left: 50%;
 	margin: 0 auto;
 }
 

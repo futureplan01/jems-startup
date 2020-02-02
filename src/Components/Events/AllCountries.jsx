@@ -18,13 +18,12 @@ class AllCountries extends Component{
     render(){
         return(
         <div>
-        <NavBar/>
-        <div className = "countries">
-            <h1><Link to="/Spain">Spain</Link></h1>
-            <h1><Link to="/France">France</Link></h1>
-            <h1><Link to="/Iceland">Iceland</Link></h1>
-            <h1><Link to="/Portugal">Portugal</Link></h1>
-        </div>
+            <div className = "countries">
+                <h1><Link to="/Spain">Spain</Link></h1>
+                <h1><Link to="/France">France</Link></h1>
+                <h1><Link to="/Iceland">Iceland</Link></h1>
+                <h1><Link to="/Portugal">Portugal</Link></h1>
+            </div>
         </div>)
     }
 
