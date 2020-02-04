@@ -1,7 +1,7 @@
 import React from "react";
 
-import NavBar from "./NavBar";
-import Slider from "./Slider";
+import NavBar from "../Basics/NavBar";
+import Slider from "../Basics/Slider";
 import SignUp from "./SignUp";
 
 function SignUpContainer(props) {

@@ -2,7 +2,6 @@ import React from "react";
 
 import NavBar from "./NavBar";
 import Slider from "./Slider";
-import Explore from "./Explore";
 import Welcome from "./Welcome";
 
 function TravelContainer(props) {

@@ -1,7 +1,7 @@
 import React from "react";
-import Slider from "../Authentication/Slider";
+import Slider from "../Basics/Slider";
 import AllCountries from "./AllCountries";
-import NavBar from "../Authentication/NavBar";
+import NavBar from "../Basics/NavBar";
 
 function CountryContainer(props) {
     return(<div>

@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import axios from "axios";
-import NavBar from "../Authentication/NavBar";
+import NavBar from "../Basics/NavBar";
 
 import {Redirect, Link} from 'react-router-dom';
 

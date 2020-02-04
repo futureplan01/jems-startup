@@ -3,8 +3,8 @@ import { Switch, Route } from "react-router-dom";
 import LoginContainer from "./Authentication/LoginContainer";
 import SignUpContainer from "./Authentication/SignUpContainer";
 import decode from 'jwt-decode';
-import HomeContainer from './Authentication/HomeContainer';
-import TravelContainer from './Authentication/TravelContainer';
+import HomeContainer from './Basics/HomeContainer';
+import TravelContainer from './Basics/TravelContainer';
 import CountryContainer from './Events/CountryContainer';
 import CountryRoutes from './Routes/CountryRoutes';
 
