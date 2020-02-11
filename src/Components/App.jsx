@@ -7,6 +7,7 @@ import HomeContainer from './Basics/HomeContainer';
 import TravelContainer from './Basics/TravelContainer';
 import CountryContainer from './Events/CountryContainer';
 import CountryRoutes from './Routes/CountryRoutes';
+import ItineraryRoutes from "./Routes/ItineraryRoutes"
 
 
 class App extends Component {
@@ -89,6 +90,7 @@ class App extends Component {
           <SignUpContainer url={url} isAuthenticated = {this.isAuthenticated}  handleMenu = {this.handleMenu}  getMenuState = {this.getMenuState}/>
         }/>
         <CountryRoutes url={url} Authenticate = {this.Authenticate} isAuthenticated = {this.isAuthenticated} handleMenu = {this.handleMenu} getMenuState = {this.getMenuState}/>
+        <ItineraryRoutes url={url} Authenticate = {this.Authenticate} isAuthenticated = {this.isAuthenticated} handleMenu = {this.handleMenu} getMenuState = {this.getMenuState}/>
       </Switch>);
   }
 }

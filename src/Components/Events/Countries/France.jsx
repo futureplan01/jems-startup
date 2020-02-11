@@ -20,7 +20,6 @@ class France extends Component{
     */
 
     getEvents(event){
-        let category = ""
         let fd = new FormData();
         console.log(event.target.name);
         console.log(this.props.name);

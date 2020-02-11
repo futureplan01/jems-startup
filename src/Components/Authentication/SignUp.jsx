@@ -53,7 +53,7 @@ class SignUp extends Component {
             console.log(yes);
         })
 
-        /*
+        
         //fd.append('myImage',this.state.image);
         fd.append('email',this.state.email);
         fd.append('password',this.state.password);
@@ -68,7 +68,7 @@ class SignUp extends Component {
         .catch(err => {
             this.setState({isError: true});
         });
-        */
+        
     }
 
     render(){

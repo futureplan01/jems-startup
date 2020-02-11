@@ -39,8 +39,7 @@ header nav{
 }
 
 .logo{
-	width: 20%;
-	margin-left: 3%;
+	margin: 0 auto;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.8em;
 	text-transform: uppercase;
@@ -405,14 +404,57 @@ a{
 /*END*/
 
 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+body{
+	background-color: #329194;
+}
 
-.jj-black{
-	position: absolute;
-	color: black;
+.social-media{
+	width: 15%;
+	display: flex;
+	flex-direction: row;
+}
+
+.social-links{
+	margin: 0 3%;
+}
+
+.logo{
+	text-transform: uppercase;
+}
+
+.nav-bar{
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-around;
+	align-items: center;
+	background-color: white;
 }
 
 
+#welcome-section{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+}
+
+.header{
+	text-align: center;
+	margin-left: 5%;
+}
 
 
 

@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Explore from "./Explore";
 
 class Slider extends Component{
 
